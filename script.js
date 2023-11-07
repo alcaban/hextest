@@ -14,7 +14,7 @@ var hexLayer = L.hexbinLayer({
 }).addTo(map);
 
 // Load GeoJSON data
-fetch('your_geojson_data.geojson')
+fetch('quakes_christchurch_20100901-20101001_mag-gt3.geojson')
     .then((response) => response.json())
     .then((data) => {
         hexLayer.data(data.features); // Pass the GeoJSON features to the hexbin layer
